@@ -24,7 +24,7 @@ bgp asn: 65515
 
 ## Azure VM setup
 
-ToDo: provide link to create and Azure VM.
+ToDo: provide link(s) to docs describing how to create an Azure VM.
 
 > N.B. Make sure to enable IP forwarding on the VM's NIC resource in Azure.
 
@@ -167,7 +167,7 @@ sudo systemctl restart bird
 
 # Check connection status
 sudo birdc show status
-    sudo birdc show route
+sudo birdc show route
 ```
 
 ### Add an example route for testing
