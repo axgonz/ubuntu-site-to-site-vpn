@@ -170,9 +170,9 @@ sudo birdc show status
 sudo birdc show route
 ```
 
-### Add an example route for testing
+### Add routes
 
 ``` bash
 # Add a route to the OS and see if Azure learns it
-sudo ip route add 136.186.0.0/16 dev eth0
+sudo ip route add 192.168.0.0/16 via 192.168.1.1
 ```
