@@ -3,7 +3,7 @@ Create a site-to-site VPN tunnel between an Ubuntu VM and an Azure VPN Gateway.
 
 ## Azure VPN Gateway setup
 
-ToDo: provide link to create and active-active Azure VPN Gateway.
+ToDo: provide link(s) to docs describing how to create an active-active Azure VPN Gateway.
 
 **Resultant config**
 
@@ -141,7 +141,7 @@ filter unwanted {
     accept;
 }
 protocol kernel {
-    learn;
+    learn;           # learn from the host's route table
     scan time 20;    # Scan kernel routing table every 20 seconds
     export all;      # Default is export none
     import filter unwanted;
